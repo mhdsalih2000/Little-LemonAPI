@@ -1,0 +1,1 @@
+Little Lemon API is a robust backend solution tailored for the Little Lemon restaurant, streamlining menu management, order processing, and delivery coordination. Powered by Django and Django REST Framework, this API supports various user roles, including customers, delivery crew, and managers.
