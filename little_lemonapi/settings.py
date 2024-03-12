@@ -138,3 +138,26 @@ REST_FRAMEWORK = {
     ],
     
 }
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'Template')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                # Add the required context processors here
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+STATIC_URL = '/static/'
+
+# Define the directories where Django will look for static files.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Add your static files directory here
+]
