@@ -81,12 +81,15 @@
             <h2>get characters</h2>
             <pre><code class="bash">
 # Here is a curl example
-curl \
--X POST http://api.westeros.com/character/get \
--F 'secret_key=your_api_key' \
--F 'house=Stark,Bolton' \
--F 'offset=0' \
--F 'limit=50'
+curl -X POST http://restoapi.shop/api/menu-items \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer your_access_token" \
+-d '{
+  "offset": 0,
+  "limit": 50,
+  "categories": ["appetizers", "main_course"]
+}'
+
                 </code></pre>
             <p>
                 To get characters you need to make a POST call to the following url :<br>
@@ -97,67 +100,42 @@ curl \
 Result example :
 
 {
-  query:{
-    offset: 0,
-    limit: 50,
-    house: [
-      "Stark",
-      "Bolton"
-    ],
-  }
-  result: [
+  "query": {
+    "offset": 0,
+    "limit": 50,
+    "categories": [
+      "appetizers",
+      "main_course"
+    ]
+  },
+  "result": [
     {
-      id: 1,
-      first_name: "Jon",
-      last_name: "Snow",
-      alive: true,
-      house: "Stark",
-      gender: "m",
-      age: 14,
-      location: "Winterfell"
+      "id": 1,
+      "name": "Caesar Salad",
+      "category": "appetizers",
+      "price": 9.99
     },
     {
-      id: 2,
-      first_name: "Eddard",
-      last_name: "Stark",
-      alive: false,
-      house: "Stark",
-      gender: "m",
-      age: 35,
-      location: 'Winterfell'
+      "id": 2,
+      "name": "Margherita Pizza",
+      "category": "main_course",
+      "price": 12.99
     },
     {
-      id: 3,
-      first_name: "Catelyn",
-      last_name: "Stark",
-      alive: false,
-      house: "Stark",
-      gender: "f",
-      age: 33,
-      location: "Winterfell"
+      "id": 3,
+      "name": "Chicken Alfredo",
+      "category": "main_course",
+      "price": 15.99
     },
     {
-      id: 4,
-      first_name: "Roose",
-      last_name: "Bolton",
-      alive: false,
-      house: "Bolton",
-      gender: "m",
-      age: 40,
-      location: "Dreadfort"
-    },
-    {
-      id: 5,
-      first_name: "Ramsay",
-      last_name: "Snow",
-      alive: false,
-      house: "Bolton",
-      gender: "m",
-      age: 15,
-      location: "Dreadfort"
-    },
+      "id": 4,
+      "name": "Garlic Bread",
+      "category": "appetizers",
+      "price": 6.99
+    }
   ]
 }
+
                 </code></pre>
             <h4>QUERY PARAMETERS</h4>
             <table class="central-overflow-x">
