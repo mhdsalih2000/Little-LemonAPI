@@ -79,7 +79,26 @@
         </div>
         <div class="overflow-hidden content-section" id="content-get-characters">
             <h2>get characters</h2>
-            <pre><code class="bash">
+            
+            <p>
+ 
+                <code class="higlighted break-word">http://restoapi.shop/api/users</code>
+                <p><strong>Description:</strong> Creates a new user with the provided name, email, and password.</p>
+                <p><strong>Authentication:</strong> No role required.</p>
+                <p><strong>Method:</strong> POST</p>
+                <p><strong>Request Body:</strong></p>
+               <pre>
+             <code>
+                 {
+                 "name": "John Doe",
+                 "email": "johndoe@example.com",
+                 "password": "strongpassword"
+                         }
+    </code>
+  </pre>
+  <p><strong>Response:</strong> 201 Created</p>
+            </p>
+         <pre><code class="bash">
 # Here is a curl example
 curl -X POST http://restoapi.shop/api/menu-items \
 -H "Content-Type: application/json" \
@@ -91,24 +110,6 @@ curl -X POST http://restoapi.shop/api/menu-items \
 }'
 
                 </code></pre>
-            <p>
- 
-                <code class="higlighted break-word">http://restoapi.shop/api/users</code>
-                <p><strong>Description:</strong> Creates a new user with the provided name, email, and password.</p>
-                <p><strong>Authentication:</strong> No role required.</p>
-                <p><strong>Method:</strong> POST</p>
-                <p><strong>Request Body:</strong></p>
-               <pre>
-             <codek>
-                 {
-                 "name": "John Doe",
-                 "email": "johndoe@example.com",
-                 "password": "strongpassword"
-                         }
-    </codek>
-  </pre>
-  <p><strong>Response:</strong> 201 Created</p>
-            </p>
          <p>
                 To get characters you need to make a POST call to the following url :<br>
                 <code class="higlighted break-word">http://restoapi.shop/api/</code>
