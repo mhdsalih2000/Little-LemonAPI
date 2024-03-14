@@ -86,7 +86,7 @@
                 <p><strong>Description:</strong> Creates a new user with the provided name, email, and password.</p>
                 <p><strong>Authentication:</strong> No role required.</p>
                 <p><strong>Method:</strong> POST</p>
-                <p><strong>Request Body:</strong></p>
+                <p><strong>Request Body: On The Right</strong></p>
                <pre>
              <code>
                  {
@@ -94,10 +94,48 @@
                  "email": "johndoe@example.com",
                  "password": "strongpassword"
                          }
+             </code>
+         </pre>
+             <p><strong>Response:</strong> 201 Created</p>
+            </p>
+          <h1>/api/users/me/</h1>
+        <p><strong>Description:</strong> Displays information about the current user.</p>
+        <p><strong>Authentication:</strong> Requires a valid user token.</p>
+        <p><strong>Method:</strong> GET</p>
+         <p><strong>Response:on the Right</strong> 200 OK</p>
+         <p><strong>Response Body:</strong></p>
+          <pre>
+    <code>
+      {
+        "id": 123,
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      }
     </code>
   </pre>
-  <p><strong>Response:</strong> 201 Created</p>
-            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
          <pre><code class="bash">
 # Here is a curl example
 curl -X POST http://restoapi.shop/api/menu-items \
@@ -110,10 +148,7 @@ curl -X POST http://restoapi.shop/api/menu-items \
 }'
 
                 </code></pre>
-         <p>
-                To get characters you need to make a POST call to the following url :<br>
-                <code class="higlighted break-word">http://restoapi.shop/api/</code>
-         </p>
+   
             <br>
             <pre><code class="json">
 Result example :
