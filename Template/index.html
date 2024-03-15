@@ -139,11 +139,7 @@
                 <code class="higlighted break-word" style="margin-left: 30px; ;">"http://restoapi.shop/token/login/"</code>
             </a>
 
-            <p>
-               
-            </p>
-        </div>
-        
+           
          
      
 
@@ -168,123 +164,12 @@
 
 
          
-         <pre><code class="bash">
-# Here is a curl example
-curl -X POST http://restoapi.shop/api/menu-items \
--H "Content-Type: application/json" \
--H "Authorization: Bearer your_access_token" \
--d '{
-  "offset": 0,
-  "limit": 50,
-  "categories": ["appetizers", "main_course"]
-}'
-
-                </code></pre>
-   
-            <br>
-            <pre><code class="json">
-Result example :
-
-{
-  "query": {
-    "offset": 0,
-    "limit": 50,
-    "categories": [
-      "appetizers",
-      "main_course"
-    ]
-  },
-  "result": [
-    {
-      "id": 1,
-      "name": "Caesar Salad",
-      "category": "appetizers",
-      "price": 9.99
-    },
-    {
-      "id": 2,
-      "name": "Margherita Pizza",
-      "category": "main_course",
-      "price": 12.99
-    },
-    {
-      "id": 3,
-      "name": "Chicken Alfredo",
-      "category": "main_course",
-      "price": 15.99
-    },
-    {
-      "id": 4,
-      "name": "Garlic Bread",
-      "category": "appetizers",
-      "price": 6.99
-    }
-  ]
-}
-
-                </code></pre>
-            <h4>QUERY PARAMETERS</h4>
-            <table class="central-overflow-x">
-                <thead>
-                <tr>
-                    <th>Field</th>
-                    <th>Type</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>secret_key</td>
-                    <td>String</td>
-                    <td>Your API key.</td>
-                </tr>
-                <tr>
-                    <td>search</td>
-                    <td>String</td>
-                    <td>(optional) A search word to find character by name.</td>
-                </tr>
-                <tr>
-                    <td>house</td>
-                    <td>String</td>
-                    <td>
-                        (optional) a string array of houses:
-                    </td>
-                </tr>
-                <tr>
-                    <td>alive</td>
-                    <td>Boolean</td>
-                    <td>
-                        (optional) a boolean to filter alived characters
-                    </td>
-                </tr>
-                <tr>
-                    <td>gender</td>
-                    <td>String</td>
-                    <td>
-                        (optional) a string to filter character by gender:<br>
-                        m: male<br>
-                        f: female
-                    </td>
-                </tr>
-                <tr>
-                    <td>offset</td>
-                    <td>Integer</td>
-                    <td>(optional - default: 0) A cursor for use in pagination. Pagination starts offset the specified offset.</td>
-                </tr>
-                <tr>
-                    <td>limit</td>
-                    <td>Integer</td>
-                    <td>(optional - default: 10) A limit on the number of objects to be returned, between 1 and 100.</td>
-                </tr>
-                </tbody>
-            </table>
         </div>
         <div class="overflow-hidden content-section" id="content-errors">
             <h2>Errors</h2>
             <p>
                 The Westeros API uses the following error codes:
-            </p>
->>>>>>> 1d0a411f58627306022b37b3ac1912446993c0f6
+            </p> 1d0a411f58627306022b37b3ac1912446993c0f6
             <table>
                 <tr>
                     <th style="padding-left: 10px;">Description</th>
@@ -399,46 +284,8 @@ Result example :
                     </td>
                   </tr>
             </table>
-            
-
-             
-            
-
-              
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-
-        
-    
-            
-            
-            
-             
-        
-        
-  
-           
-
-  
-
-
+     
+          
 
  
     </div>
