@@ -143,7 +143,7 @@ class MenuItemView(groupmixin,ListAPIView,CreateAPIView,UpdateAPIView):
             return [IsAuthenticated()]
 
         else:
-            return [DenyAccessPermission(),IsAuthenticated()]
+            return [DenyAccessPermission()]
         
     
         
