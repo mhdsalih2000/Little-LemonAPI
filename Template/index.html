@@ -135,8 +135,8 @@
 
 
               
-            <a href="http://restoapi.shop/token/login/" target="_blank" rel="noopener noreferrer">
-                <code class="higlighted break-word" style="margin-left: 30px; ;">"http://restoapi.shop/token/login/"</code>
+            <a href="http://restoapi.shop/api/token/login" target="_blank" rel="noopener noreferrer">
+                <code class="higlighted break-word" style="margin-left: 30px; ;">"http://restoapi.shop/api/token/login"</code>
             </a>
             <table>
                 <tr>
@@ -246,6 +246,98 @@
                     </td>
                   </tr>
             </table>
+
+
+         
+          <a href="http://restoapi.shop/api/menu-items" target="_blank" rel="noopener noreferrer">
+              <code class="higlighted break-word" style="margin-left: 30px; ;">http://restoapi.shop/api/menu-items</code>
+          </a>
+          
+          <table>
+              <tr>
+                  <th style="padding-left: 10px;">Description <span></span></th>
+                  <td style="padding-left: 10px;">Lists all menu items.</td>
+              </tr>
+              <tr>
+                  <th style="padding-left: 10px;">User Roles</th>
+                  <td style="padding-left: 10px;">Manager</td>
+              </tr>
+              <tr>
+                  <th style="padding-left: 10px;">Authentication</th>
+                  <td style="padding-left: 10px;">Requires a valid Manager user token.</td>
+              </tr>
+              <tr>
+                  <th style="padding-left: 10px;">Method</th>
+                  <td style="padding-left: 10px;">POST</td>
+              </tr>
+              <tr>
+                  <th style="padding-left: 10px;">Response</th>
+                  <td style="padding-left: 10px;"> 
+                      201 Created
+                    </td>
+              </tr>
+              <tr>
+                  <th style="padding-left: 10px;">Response Body example</th>
+                  <td style="padding-left: 10px;">
+                    <code style="color: red;" class="json">
+                      [
+                      {
+                          "id": 1,
+                          "name": "Margherita Pizza",
+                          "category": "Pizza",
+                          "price": 9.99
+                      }]
+                    </code>
+                  </td>
+                </tr>
+          </table>
+          </div>      
+
+
+
+        </a>
+        <a href="http://restoapi.shop/api/menu-items" target="_blank" rel="noopener noreferrer">
+            <code class="higlighted break-word" style="margin-left: 30px; ;">http://restoapi.shop/api/menu-items</code>
+        </a>
+        
+        <table>
+            <tr>
+                <th style="padding-left: 10px;">Description <span></span></th>
+                <td style="padding-left: 10px;">Lists all menu items.</td>
+            </tr>
+            <tr>
+                <th style="padding-left: 10px;">User Roles</th>
+                <td style="padding-left: 10px;">Customer, delivery crew</td>
+            </tr>
+            <tr>
+                <th style="padding-left: 10px;">Authentication</th>
+                <td style="padding-left: 10px;">Not required</td>
+            </tr>
+            <tr>
+                <th style="padding-left: 10px;">Method</th>
+                <td style="padding-left: 10px;">GET</td>
+            </tr>
+            <tr>
+                <th style="padding-left: 10px;">Response</th>
+                <td style="padding-left: 10px;"> 
+                    200 OK
+                  </td>
+            </tr>
+            <tr>
+                <th style="padding-left: 10px;">Response Body example</th>
+                <td style="padding-left: 10px;">
+                  <code style="color: red;" class="json">
+                    [
+                    {
+                        "id": 1,
+                        "name": "Margherita Pizza",
+                        "category": "Pizza",
+                        "price": 9.99
+                    }]
+                  </code>
+                </td>
+              </tr>
+        </table>
  
     </div>
     <div class="content-code"></div>

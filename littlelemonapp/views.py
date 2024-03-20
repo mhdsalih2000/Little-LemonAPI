@@ -137,6 +137,13 @@ class groupmixin:
 class MenuItemView(groupmixin,ListAPIView,CreateAPIView,UpdateAPIView):
     queryset  =    Menuitem.objects.all()
     serializer_class =MenuitemsSerializer
+
+    def get_permissions(self):
+        if self.get_user_group(self.request) == 'Manger':
+            return [IsAuthenticated()]
+
+        else:
+            return [DenyAccessPermission(),IsAuthenticated()]
         
     
         
