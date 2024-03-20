@@ -204,7 +204,7 @@ class MenuSingleSerch(groupmixin,ListAPIView):
             return [IsAuthenticated()]
 
         else:
-            return [DenyAccessPermission(),IsAuthenticated()]
+            return [DenyAccessPermission()]
     def get_queryset(self):
         item_name = self.request.query_params.get('itemName')
         if item_name:
