@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5t86ar$vc@1mni2&*51qfkv^u2nd!#4erxv!9b4lvo#z(t(*qo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['restoapi.shop' ,'www.restoapi.shop' ]
 
 
 # Application definition
